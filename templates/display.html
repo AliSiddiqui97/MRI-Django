@@ -1,0 +1,50 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    
+    
+
+    <div class="col-10 text-center mt-10">
+        <h2 class="text-left">
+            Started from: 
+        </h2>
+        <h5 class="text-left">
+            This is an mri scan image which was used for the project before any processing.
+        </h5>
+        <img src="{% static 'startImage.jpeg' %}" width="300" height="300"> 
+    </div>
+    
+    <br>
+    <hr>
+    <div class="col-10 text-center mt-10">
+        <h2 class="text-left">
+            Threshold: 
+        </h2>
+        <h5 class="text-left">
+            The threshold image of the base image. Unfortunatly the grey image could not be displaced as it becomes in 2d.
+        </h5>
+        <img src="{% static 'thresh.jpeg' %}" width="300" height="300"> 
+    </div>
+    
+    
+        
+    <br>
+    <hr>
+    <div class="col-10 text-center mt-10">
+        <h2 class="text-left">
+            Final Results: 
+        </h2>
+        <h5 class="text-left">
+            The Final results are: 
+        </h5>
+        <img src="{% static 'result.jpeg' %}" width="300" height="300"> 
+        <br>
+        <img src="{% static 'result2.jpeg' %}" width="300" height="300"> 
+        <br>
+        <img src="{% static 'result3.jpeg' %}" width="300" height="300"> 
+    </div>
+    <br>
+
+
+{% endblock content %}

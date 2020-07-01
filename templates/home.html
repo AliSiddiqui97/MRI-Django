@@ -1,0 +1,51 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Interface</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div class="container">
+    <div class="sm-10 mt-auto mb-auto ml-auto mr-auto bg-primary text-center " style="margin-bottom: 20px;">
+        <h1 style="font-size: 60px;">MRI SEGMENTATION</h1>
+    <div class="sm-10 bg-light text-left p-10" style="padding-left: 40px;">
+        <h5 style="font-size: 30px; padding-bottom: 10px;">Purpose:</h5>
+        <h5 class="pb-10"> urpose of this project is to detect Cancer cells by image segmentation. Brain tumors can be detected using MRI images but it very tough to detect brain
+            tumor in the early stages of tumor. MRI images are more susceptible to noise and
+            other environmental interventions. To cure this tumor, it is better to identify it in
+            the very early stage. The purpose of this project is to design a technique which can
+            remove noise from the MRI images and present a very clear view of the image to the
+            physician so that he/she can easily identify the tumor.</h5>
+        <br>
+        <hr>
+           </div> 
+    </div>       
+    
+    <button>
+
+    <a href="{%url 'showResult' %}">Upload</a>
+
+    </button>
+
+
+    {% block content %}
+
+    {% endblock content %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</div>
+
+
+</body>
+</html>
